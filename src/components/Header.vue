@@ -6,11 +6,14 @@
           <h1 class="hidden md:inline-block">PJay</h1>
         </div>
         <div class="flex gap-5">
-          <a href="/about">
+          <a href="#">
             About
           </a>
-          <a href="">
+          <a href="#">
             Skills
+          </a>
+          <a href="#">
+            Contact
           </a>
         </div>
       </div>
