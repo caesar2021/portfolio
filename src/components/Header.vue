@@ -5,7 +5,7 @@
           <pjay-logo/>
           <h1 class="hidden md:inline-block">PJay</h1>
         </div>
-        <div class="flex gap-5">
+        <div class="flex gap-5 font-semibold">
           <a href="#">
             About
           </a>
