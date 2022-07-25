@@ -2,7 +2,7 @@
 	<main class="z-0">
 		<full-page ref="fullpage" :options="options" id="fullpage">
 			<div class="section" data-anchor="firstPage">
-    			<pjay-intro/>
+    			<pjay-landing/>
     		</div>
     		<div class="section" data-anchor="secondPage">
     			<h3>Second page</h3>
@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-	import PjayIntro from '@/components/Intro.vue'
+	import PjayLanding from '@/components/Landing.vue'
 	const options = {
 
 		anchors:['firstPage', 'secondPage', 'thirdPage']
