@@ -1,11 +1,17 @@
 <template>
 	<main class="z-0">
 		<full-page ref="fullpage" :options="options" id="fullpage">
-			<div class="section" data-anchor="firstPage">
+			<div class="section" data-anchor="home">
     			<pjay-landing/>
     		</div>
-    		<div class="section" data-anchor="secondPage">
-    			<h3>Second page</h3>
+    		<div class="section fp-auto-height-responsive" data-anchor="intro">
+                <pjay-intro/>
+    		</div>
+    		<div class="section" data-anchor="skills">
+    			
+    		</div>
+    		<div class="section" data-anchor="contact">
+    			
     		</div>
     	</full-page>
     </main>
@@ -13,9 +19,11 @@
 
 <script setup>
 	import PjayLanding from '@/components/Landing.vue'
+	import PjayIntro from '@/components/Intro.vue'
 	const options = {
 
-		anchors:['firstPage', 'secondPage', 'thirdPage']
-
+		anchors:['home', 'intro', 'skills', 'contact'],
+        sectionsColor: [ '#475569', '#0ea5e9', '#8b5cf6', '#ec4899' ],
+        
 	}
 </script>
