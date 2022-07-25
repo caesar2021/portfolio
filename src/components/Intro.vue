@@ -1,14 +1,20 @@
 <template>
-	<div class="flex justify-center">
-		<div class="max-w-sm w-full font-semibold text-center">
-			<h3 class="text-4xl">Hello! </h3>
-			<h1 class="text-8xl">I'm <span class="text-indigo-500 font-bold">PJay</span></h1>
-			<p>I fix and break websites</p>
-			<pjay-socials/>
+	<div class="flex flex-col font-semibold text-gray-200 px-10">
+		<div class="flex justify-center ">
+			<div class="pb-3 w-full max-w-sm">
+				<h4 class="text-3xl">Intro</h4>
+				<p>{{ $t("introContent", { fullName, age, address }) }}</p>
+			</div>
 		</div>
 	</div>
 </template>
 
 <script setup>
-	import PjaySocials from '@/components/Socials.vue'
+	
+	import moment from 'moment'
+
+	const fullName = import.meta.env.VITE_FULL_NAME
+	const address = import.meta.env.VITE_ADDRESS
+	const age = moment().diff( moment(import.meta.env.VITE_BIRTH_DATE), 'years')
+
 </script>
